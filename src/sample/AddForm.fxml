@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="449.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddFormController">
+   <children>
+      <Label layoutX="105.0" layoutY="14.0" text="Add New Employee Profile">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="93.0" text="Employee ID:" />
+      <Label layoutX="66.0" layoutY="130.0" text="Name:" />
+      <Label layoutX="61.0" layoutY="172.0" text="Country:" />
+      <Label layoutX="43.0" layoutY="211.0" text="Province/State:" />
+      <Label layoutX="72.0" layoutY="248.0" text="City:" />
+      <Label layoutX="51.0" layoutY="286.0" text="Postal Code:" />
+      <Label layoutX="61.0" layoutY="325.0" text="Address:" />
+      <TextField fx:id="idText" layoutX="183.0" layoutY="89.0" />
+      <TextField fx:id="nameText" layoutX="183.0" layoutY="126.0" />
+      <ComboBox fx:id="countryBox" layoutX="184.0" layoutY="168.0" onAction="#CountrySelected" prefWidth="150.0" />
+      <ComboBox fx:id="provinceBox" layoutX="183.0" layoutY="207.0" onAction="#ProvinceSelected" prefWidth="150.0" />
+      <ComboBox fx:id="cityBox" layoutX="183.0" layoutY="244.0" onAction="#CitySelected" prefWidth="150.0" />
+      <TextField fx:id="postalText" layoutX="183.0" layoutY="282.0" />
+      <TextField fx:id="addressText" layoutX="183.0" layoutY="321.0" />
+      <Button fx:id="saveButton" layoutX="291.0" layoutY="381.0" mnemonicParsing="false" onAction="#SaveButtonClicked" text="Save" />
+      <Button layoutX="207.0" layoutY="381.0" mnemonicParsing="false" onAction="#CancelButtonClicked" text="Cancel" />
+   </children>
+</AnchorPane>
